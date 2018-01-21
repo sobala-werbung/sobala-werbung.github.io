@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+      {% include header.html %}
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+      </div>
+      <section id="content" class="content">{{ content }}</section>
+      {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,65 @@
+#about {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 960px;
+  @media only screen and (min-width: $cut) {
+    width: 80%;
+  }
+}
+
+.column {
+  margin: 8px;
+  width: 100%;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 200px;
+  }
+
+  h3 {
+    margin: 16px 0 8px 16px;
+    padding: 0;
+    text-align: left;
+  }
+}
+
+.columns {
+  text-align: center;
+  font-size: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  p, li {
+    font-size: 16px;
+  }
+  ul {
+    text-align: left;
+    margin: 0;
+  }
+  @media only screen and (min-width: $cut) {
+    flex-wrap: nowrap;
+    font-size: 75px;
+  }
+}
+
+.office-details {
+  text-align: center;
+  margin: 5px 8px 72px;
+}
+
+.offers {
+  text-align: center;
+  margin: 5px auto;
+}
+
+.zoomImg {
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
