@@ -4,9 +4,7 @@
   margin-top: 100px;
   text-align: center;
   color: #FFF;
-  .love {
-    color: red;
-  }
+
   a {
     text-decoration: none;
     margin: 0;
@@ -16,6 +14,27 @@
     }
     &:active {
       color: $sec;
+    }
+  }
+
+  .info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media only screen and (min-width: $cut) {
+      flex-direction: row;
+      flex-wrap: no-wrap;
+    }
+
+    i {
+      padding-right: 8px;
+    }
+
+    a {
+      padding: 0 12px;
     }
   }
 }
